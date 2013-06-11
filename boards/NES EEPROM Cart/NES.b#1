@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -248,7 +248,7 @@ and Tomas Härdin
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules>
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -434,26 +434,16 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="P$36"/>
 <contactref element="U1" pad="32"/>
 <contactref element="U2" pad="32"/>
-<polygon width="0.4064" layer="1">
-<vertex x="-50.8" y="22.86"/>
-<vertex x="50.8" y="22.86"/>
-<vertex x="50.8" y="-1.27"/>
-<vertex x="-50.8" y="-1.27"/>
-</polygon>
 <wire x1="-3.81" y1="2.54" x2="-44.15" y2="-10.3187" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="2.54" x2="-3.81" y2="2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="U$1" pad="P$72"/>
 <contactref element="U$1" pad="P$1"/>
 <contactref element="U1" pad="16"/>
 <contactref element="U2" pad="16"/>
-<polygon width="0.4064" layer="16">
-<vertex x="-50.8" y="22.86"/>
-<vertex x="50.8" y="22.86"/>
-<vertex x="50.8" y="-1.27"/>
-<vertex x="-50.8" y="-1.27"/>
-</polygon>
 <wire x1="-41.91" y1="17.78" x2="-44.15" y2="-10.3187" width="0" layer="19" extent="16-16"/>
+<wire x1="5.08" y1="17.78" x2="-41.91" y2="17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="44.15" y1="-10.3187" x2="5.08" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CHR_DATA_0">
