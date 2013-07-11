@@ -89,6 +89,11 @@
 <vertex x="43.8165" y="30.3205"/>
 <vertex x="43.8165" y="29.3045"/>
 </polygon>
+<polygon width="0.127" layer="21">
+<vertex x="29.1735" y="4.3125"/>
+<vertex x="29.8085" y="3.8045"/>
+<vertex x="29.8085" y="4.8205"/>
+</polygon>
 </plain>
 <libraries>
 <library name="Custom">
@@ -2250,7 +2255,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="X1" library="Custom" package="2-SMD_8MMX4.5MM" value="8MHz" x="36.3" y="4.1" smashed="yes">
 <attribute name="DIGIKEY" value="535-10870-1-ND" x="36.3" y="4.1" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="40.75" y="1" size="1.27" layer="25"/>
-<attribute name="VALUE" x="33.975" y="0.346" size="1.27" layer="27"/>
+<attribute name="VALUE" x="34.225" y="0.346" size="1.27" layer="27"/>
 </element>
 <element name="C1" library="rcl" package="C0603" value="18pF" x="34.8" y="7.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.25" y="8.25" size="1.27" layer="25" rot="R180"/>
@@ -2271,7 +2276,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="31.75" y="18.75" size="1.27" layer="26" rot="MR90"/>
 </element>
 <element name="C8" library="rcl" package="C0603" value=".1uF" x="48.875" y="3.1" smashed="yes" rot="MR0">
-<attribute name="NAME" x="47.285" y="2.535" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="50.035" y="0.91" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="R2" library="rcl" package="R0603" value="100K" x="48.875" y="5.399" smashed="yes" rot="MR0">
 <attribute name="NAME" x="49.86" y="6.334" size="1.27" layer="26" rot="MR0"/>
@@ -2293,18 +2298,18 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="45.04" y="24.7508" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="C14" library="rcl" package="C0603" value="1uF" x="38.5" y="19.6" smashed="yes" rot="MR90">
-<attribute name="NAME" x="37.96" y="14.69" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="37.96" y="14.44" size="1.27" layer="26" rot="MR90"/>
 </element>
 <element name="C15" library="rcl" package="C0603" value="1uF" x="38.5" y="22.7" smashed="yes" rot="MR270">
-<attribute name="NAME" x="39.215" y="27.61" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="39.215" y="28.11" size="1.27" layer="26" rot="MR270"/>
 </element>
 <element name="SW1" library="Custom" package="SMT_PUSHBUTTON" value="Reset" x="50.075" y="3.549" smashed="yes">
 <attribute name="NAME" x="48.748" y="2.334" size="0.8128" layer="25" rot="R90"/>
-<attribute name="VALUE" x="48.55" y="6.486" size="0.8128" layer="27"/>
+<attribute name="VALUE" x="48.55" y="6.611" size="0.8128" layer="27"/>
 </element>
 <element name="LED1" library="led" package="CHIPLED_0603" value="PWR" x="50.075" y="15.005" smashed="yes" rot="R90"/>
 <element name="R3" library="rcl" package="R0603" value="20" x="50.075" y="15.005" smashed="yes" rot="MR180">
-<attribute name="NAME" x="48.56" y="14.365" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="48.31" y="14.365" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="C16" library="rcl" package="C0603" value="1uF" x="28.35" y="20.45" smashed="yes" rot="MR180">
 <attribute name="NAME" x="29.75" y="21.2" size="1.27" layer="26" rot="MR0"/>
@@ -2327,18 +2332,18 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="RX" library="testpad" package="TP10R" value="TPTP10R" x="25.5" y="12.125" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="25.5" y="10.22" size="1" layer="38" rot="MR0"/>
-<attribute name="NAME" x="24.6251" y="11.5499" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="24.6251" y="11.2999" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="TX" library="testpad" package="TP10R" value="TPTP10R" x="27.25" y="12.125" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="27.25" y="10.22" size="1" layer="38" rot="MR0"/>
-<attribute name="NAME" x="30.3751" y="11.5499" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="30.1251" y="11.2999" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="SW2" library="Custom" package="SMT_PUSHBUTTON" value="Program" x="50.075" y="10.312" smashed="yes">
 <attribute name="NAME" x="48.688" y="9.025" size="0.8128" layer="25" rot="R90"/>
-<attribute name="VALUE" x="47.95" y="13.312" size="0.8128" layer="27"/>
+<attribute name="VALUE" x="47.95" y="13.312" size="0.8128" layer="27" font="fixed"/>
 </element>
 <element name="R7" library="rcl" package="R0603" value="100K" x="48.875" y="12.162" smashed="yes" rot="MR0">
-<attribute name="NAME" x="49.51" y="12.797" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="50.26" y="9.797" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="J2" library="con-phoenix-350" package="1751248" value="1751248" x="10" y="46.125" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="10" y="46.125" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2361,7 +2366,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="J8" library="Custom" package="HEADER_.100IN_8PIN_4X2" value="Ser I/O" x="23.75" y="3" smashed="yes" rot="R180">
 <attribute name="NAME" x="18.33" y="1.704" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="26.5" y="7.191" size="1.27" layer="27" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="27.5" y="7.191" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 </elements>
 <signals>
