@@ -348,10 +348,12 @@ UsedLibrary="E:/Data/Engineering/Layout and PCB Files/Eagle/lbr/Texas_Instrument
 UsedLibrary="E:/Data/Engineering/Layout and PCB Files/Eagle/lbr/lpc177x-lpc178x.lbr"
 UsedLibrary="E:/Data/Engineering/Layout and PCB Files/Eagle/lbr/luminary-micro.lbr"
 UsedLibrary="E:/Data/Engineering/Layout and PCB Files/Eagle/lbr/nintendo_nes_cartedge.lbr"
+UsedLibrary="E:/Data/Engineering/Layout and PCB Files/Eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="E:/Data/Engineering/Layout and PCB Files/Eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-RF.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="637 557 1495 1113"
+Loc="600 496 1575 1111"
 State=2
 Number=0
 
