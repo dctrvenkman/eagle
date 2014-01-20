@@ -1876,7 +1876,7 @@ at 30/07/2012 10:08:22</description>
 <smd name="P$38" x="-8.75" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$39" x="-9.25" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$40" x="-9.75" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<polygon width="0.127" layer="1">
+<polygon width="0.254" layer="1">
 <vertex x="-13.05" y="-2.3"/>
 <vertex x="-12.25" y="-2.3"/>
 <vertex x="-12.25" y="-1.5"/>
@@ -1884,7 +1884,7 @@ at 30/07/2012 10:08:22</description>
 <vertex x="-10.65" y="-3.9"/>
 <vertex x="-13.05" y="-3.9"/>
 </polygon>
-<polygon width="0.127" layer="1">
+<polygon width="0.254" layer="1">
 <vertex x="10.65" y="-1.5"/>
 <vertex x="12.25" y="-1.5"/>
 <vertex x="12.25" y="-2.3"/>
@@ -1900,7 +1900,7 @@ at 30/07/2012 10:08:22</description>
 <wire x1="-12.75" y1="-5.3" x2="-12.75" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.75" y1="-4.5" x2="-12.15" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.15" y1="-4.5" x2="-12.15" y2="-0.3" width="0.127" layer="21"/>
-<polygon width="0.127" layer="29">
+<polygon width="0.254" layer="29">
 <vertex x="-13.175" y="-2.175"/>
 <vertex x="-12.375" y="-2.175"/>
 <vertex x="-12.375" y="-1.375"/>
@@ -1908,7 +1908,7 @@ at 30/07/2012 10:08:22</description>
 <vertex x="-10.525" y="-4.025"/>
 <vertex x="-13.175" y="-4.025"/>
 </polygon>
-<polygon width="0.127" layer="29">
+<polygon width="0.254" layer="29">
 <vertex x="10.525" y="-1.375"/>
 <vertex x="12.375" y="-1.375"/>
 <vertex x="12.375" y="-2.175"/>
@@ -2994,7 +2994,7 @@ Taken from: &lt;a href&gt;http://www.abracon.com/Resonators/abm2.pdf&lt;/a&gt;</
 <device name="" package="SMA-J-P-X-ST-EM1">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="GND@1" pad="G@1"/>
+<connect gate="G$1" pin="GND@1" pad="G@1 G@2 G@3 G@4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14702,7 +14702,7 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <label x="233.68" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DN" class="0">
+<net name="D_N" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="U$4" gate="G$1" pin="P$6"/>
@@ -14713,7 +14713,7 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <junction x="-25.4" y="91.44"/>
 </segment>
 </net>
-<net name="DP" class="0">
+<net name="D_P" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="88.9" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
@@ -14777,6 +14777,8 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <segment>
 <wire x1="-38.1" y1="-27.94" x2="40.64" y2="-27.94" width="0.762" layer="92"/>
 <label x="-45.72" y="-30.48" size="1.778" layer="95"/>
+<wire x1="68.58" y1="-22.86" x2="68.58" y2="33.02" width="0.762" layer="92"/>
+<wire x1="119.38" y1="-22.86" x2="119.38" y2="33.02" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -14786,11 +14788,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="B0"/>
 <wire x1="-38.1" y1="-27.94" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S9"/>
+<wire x1="68.58" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
+<label x="71.12" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B1" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="B1"/>
 <wire x1="-35.56" y1="-27.94" x2="-35.56" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S11"/>
+<wire x1="68.58" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
+<label x="71.12" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B2" class="0">
@@ -14798,11 +14810,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="B2"/>
 <wire x1="-33.02" y1="-27.94" x2="-33.02" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S13"/>
+<wire x1="68.58" y1="20.32" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
+<label x="71.12" y="20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B3" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="B3"/>
 <wire x1="-30.48" y1="-27.94" x2="-30.48" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S15"/>
+<wire x1="68.58" y1="17.78" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
+<label x="71.12" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B4" class="0">
@@ -14810,11 +14832,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="B4"/>
 <wire x1="-27.94" y1="-27.94" x2="-27.94" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S17"/>
+<wire x1="68.58" y1="15.24" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
+<label x="71.12" y="15.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B5" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="B5"/>
 <wire x1="-25.4" y1="-27.94" x2="-25.4" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S19"/>
+<wire x1="68.58" y1="12.7" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
+<label x="71.12" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B6" class="0">
@@ -14822,11 +14854,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="B6"/>
 <wire x1="-22.86" y1="-27.94" x2="-22.86" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S21"/>
+<wire x1="68.58" y1="10.16" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
+<label x="71.12" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B7" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="B7"/>
 <wire x1="-20.32" y1="-27.94" x2="-20.32" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S23"/>
+<wire x1="68.58" y1="7.62" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
+<label x="71.12" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="G0" class="0">
@@ -14834,11 +14876,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="G0"/>
 <wire x1="-15.24" y1="-27.94" x2="-15.24" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S10"/>
+<wire x1="119.38" y1="25.4" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
+<label x="104.14" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="G1" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="G1"/>
 <wire x1="-12.7" y1="-27.94" x2="-12.7" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S12"/>
+<wire x1="119.38" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
+<label x="104.14" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="G2" class="0">
@@ -14846,11 +14898,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="G2"/>
 <wire x1="-10.16" y1="-27.94" x2="-10.16" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S14"/>
+<wire x1="119.38" y1="20.32" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
+<label x="104.14" y="20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="G3" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="G3"/>
 <wire x1="-7.62" y1="-27.94" x2="-7.62" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S16"/>
+<wire x1="119.38" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
+<label x="104.14" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="G4" class="0">
@@ -14858,11 +14920,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="G4"/>
 <wire x1="-5.08" y1="-27.94" x2="-5.08" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S18"/>
+<wire x1="119.38" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
+<label x="104.14" y="15.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="G5" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="G5"/>
 <wire x1="-2.54" y1="-27.94" x2="-2.54" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S20"/>
+<wire x1="119.38" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<label x="104.14" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="G6" class="0">
@@ -14870,11 +14942,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="G6"/>
 <wire x1="0" y1="-27.94" x2="0" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S22"/>
+<wire x1="119.38" y1="10.16" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
+<label x="104.14" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="G7" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="G7"/>
 <wire x1="2.54" y1="-27.94" x2="2.54" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S24"/>
+<wire x1="119.38" y1="7.62" x2="101.6" y2="7.62" width="0.1524" layer="91"/>
+<label x="104.14" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R0" class="0">
@@ -14882,11 +14964,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="R0"/>
 <wire x1="7.62" y1="-27.94" x2="7.62" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S25"/>
+<wire x1="68.58" y1="5.08" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
+<label x="71.12" y="5.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R1" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="R1"/>
 <wire x1="10.16" y1="-27.94" x2="10.16" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S27"/>
+<wire x1="68.58" y1="2.54" x2="86.36" y2="2.54" width="0.1524" layer="91"/>
+<label x="71.12" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R2" class="0">
@@ -14894,11 +14986,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="R2"/>
 <wire x1="12.7" y1="-27.94" x2="12.7" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S29"/>
+<wire x1="68.58" y1="0" x2="86.36" y2="0" width="0.1524" layer="91"/>
+<label x="71.12" y="0" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R3" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="R3"/>
 <wire x1="15.24" y1="-27.94" x2="15.24" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S31"/>
+<wire x1="68.58" y1="-2.54" x2="86.36" y2="-2.54" width="0.1524" layer="91"/>
+<label x="71.12" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R4" class="0">
@@ -14906,11 +15008,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="R4"/>
 <wire x1="17.78" y1="-27.94" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S33"/>
+<wire x1="68.58" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
+<label x="71.12" y="-5.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R5" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="R5"/>
 <wire x1="20.32" y1="-27.94" x2="20.32" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S35"/>
+<wire x1="68.58" y1="-7.62" x2="86.36" y2="-7.62" width="0.1524" layer="91"/>
+<label x="71.12" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R6" class="0">
@@ -14918,11 +15030,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="R6"/>
 <wire x1="22.86" y1="-27.94" x2="22.86" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S37"/>
+<wire x1="68.58" y1="-10.16" x2="86.36" y2="-10.16" width="0.1524" layer="91"/>
+<label x="71.12" y="-10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R7" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="R7"/>
 <wire x1="25.4" y1="-27.94" x2="25.4" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S39"/>
+<wire x1="68.58" y1="-12.7" x2="86.36" y2="-12.7" width="0.1524" layer="91"/>
+<label x="71.12" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_LP" class="0">
@@ -14930,11 +15052,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="HSYNC"/>
 <wire x1="30.48" y1="-27.94" x2="30.48" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S6"/>
+<wire x1="119.38" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
+<label x="104.14" y="30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LCD_FP" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="VSYNC"/>
 <wire x1="33.02" y1="-27.94" x2="33.02" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S8"/>
+<wire x1="119.38" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
+<label x="104.14" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_DCLK" class="0">
@@ -14942,11 +15074,21 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="CLK"/>
 <wire x1="35.56" y1="-27.94" x2="35.56" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S5"/>
+<wire x1="68.58" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<label x="71.12" y="30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LCD_ENAB_M" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="DE"/>
 <wire x1="38.1" y1="-27.94" x2="38.1" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S7"/>
+<wire x1="68.58" y1="27.94" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
+<label x="71.12" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_PWR" class="0">
@@ -14954,12 +15096,22 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J8" gate="G$1" pin="DISP"/>
 <wire x1="40.64" y1="-27.94" x2="40.64" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S3"/>
+<wire x1="68.58" y1="33.02" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
+<label x="71.12" y="33.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LED1_PWR" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="LED+"/>
 <wire x1="-43.18" y1="27.94" x2="-58.42" y2="27.94" width="0.1524" layer="91"/>
 <label x="-58.42" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="S26"/>
+<wire x1="101.6" y1="5.08" x2="121.92" y2="5.08" width="0.1524" layer="91"/>
+<label x="104.14" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -15014,6 +15166,20 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <wire x1="104.14" y1="-25.4" x2="104.14" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="-33.02" x2="93.98" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="93.98" y="-33.02"/>
+</segment>
+</net>
+<net name="LCD_LE" class="0">
+<segment>
+<pinref part="J9" gate="G$1" pin="S4"/>
+<wire x1="119.38" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
+<label x="104.14" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED2_PWR" class="0">
+<segment>
+<pinref part="J9" gate="G$1" pin="S28"/>
+<wire x1="101.6" y1="2.54" x2="121.92" y2="2.54" width="0.1524" layer="91"/>
+<label x="104.14" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

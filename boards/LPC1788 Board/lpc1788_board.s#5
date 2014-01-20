@@ -1900,6 +1900,23 @@ at 30/07/2012 10:08:22</description>
 <wire x1="-12.75" y1="-5.3" x2="-12.75" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.75" y1="-4.5" x2="-12.15" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.15" y1="-4.5" x2="-12.15" y2="-0.3" width="0.127" layer="21"/>
+<polygon width="0.127" layer="29">
+<vertex x="-13.175" y="-2.175"/>
+<vertex x="-12.375" y="-2.175"/>
+<vertex x="-12.375" y="-1.375"/>
+<vertex x="-10.525" y="-1.375"/>
+<vertex x="-10.525" y="-4.025"/>
+<vertex x="-13.175" y="-4.025"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="10.525" y="-1.375"/>
+<vertex x="12.375" y="-1.375"/>
+<vertex x="12.375" y="-2.175"/>
+<vertex x="13.175" y="-2.175"/>
+<vertex x="13.175" y="-4.025"/>
+<vertex x="10.525" y="-4.025"/>
+</polygon>
+<text x="-12" y="-7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="SO3_016">
 <smd name="P$1" x="-4.445" y="-4.65" dx="0.6" dy="2.05" layer="1"/>
@@ -12516,6 +12533,8 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 </class>
 <class number="1" name="Filled Plane" width="0" drill="0">
 </class>
+<class number="2" name="Differential Pairs" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U$1" library="lpc177x-lpc178x" deviceset="LPC177X_8X-208" device=""/>
@@ -14683,7 +14702,7 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <label x="233.68" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D-" class="0">
+<net name="DN" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="U$4" gate="G$1" pin="P$6"/>
@@ -14694,7 +14713,7 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <junction x="-25.4" y="91.44"/>
 </segment>
 </net>
-<net name="D+" class="0">
+<net name="DP" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="88.9" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>

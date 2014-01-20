@@ -1900,6 +1900,23 @@ at 30/07/2012 10:08:22</description>
 <wire x1="-12.75" y1="-5.3" x2="-12.75" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.75" y1="-4.5" x2="-12.15" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.15" y1="-4.5" x2="-12.15" y2="-0.3" width="0.127" layer="21"/>
+<polygon width="0.127" layer="29">
+<vertex x="-13.175" y="-2.175"/>
+<vertex x="-12.375" y="-2.175"/>
+<vertex x="-12.375" y="-1.375"/>
+<vertex x="-10.525" y="-1.375"/>
+<vertex x="-10.525" y="-4.025"/>
+<vertex x="-13.175" y="-4.025"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="10.525" y="-1.375"/>
+<vertex x="12.375" y="-1.375"/>
+<vertex x="12.375" y="-2.175"/>
+<vertex x="13.175" y="-2.175"/>
+<vertex x="13.175" y="-4.025"/>
+<vertex x="10.525" y="-4.025"/>
+</polygon>
+<text x="-12" y="-7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="SO3_016">
 <smd name="P$1" x="-4.445" y="-4.65" dx="0.6" dy="2.05" layer="1"/>
@@ -12516,6 +12533,8 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 </class>
 <class number="1" name="Filled Plane" width="0" drill="0">
 </class>
+<class number="2" name="Differential Pairs" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U$1" library="lpc177x-lpc178x" deviceset="LPC177X_8X-208" device=""/>
@@ -12663,6 +12682,7 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R0402" value="10K"/>
+<part name="C32" library="rcl" deviceset="C-EU" device="C0402" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -13307,22 +13327,6 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J6" gate="G$1" pin="S10"/>
 <wire x1="-68.58" y1="-88.9" x2="-48.26" y2="-88.9" width="0.1524" layer="91"/>
 <label x="-66.04" y="-88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="USB_D+" class="0">
-<segment>
-<wire x1="154.94" y1="5.08" x2="195.58" y2="5.08" width="0.1524" layer="91"/>
-<label x="157.48" y="5.08" size="1.778" layer="95"/>
-<pinref part="U$1" gate="PORT0" pin="P0[31]/USB_D+2"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="5.08" x2="195.58" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="USB_D-" class="0">
-<segment>
-<wire x1="154.94" y1="2.54" x2="167.64" y2="2.54" width="0.1524" layer="91"/>
-<label x="157.48" y="2.54" size="1.778" layer="95"/>
-<pinref part="U$1" gate="PORT0" pin="USB_D-2"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -14204,6 +14208,22 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="J10" gate="G$1" pin="S4"/>
 </segment>
 </net>
+<net name="USB_D_P" class="0">
+<segment>
+<wire x1="154.94" y1="5.08" x2="195.58" y2="5.08" width="0.1524" layer="91"/>
+<label x="157.48" y="5.08" size="1.778" layer="95"/>
+<pinref part="U$1" gate="PORT0" pin="P0[31]/USB_D+2"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="5.08" x2="195.58" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_D_N" class="0">
+<segment>
+<wire x1="154.94" y1="2.54" x2="170.18" y2="2.54" width="0.1524" layer="91"/>
+<label x="157.48" y="2.54" size="1.778" layer="95"/>
+<pinref part="U$1" gate="PORT0" pin="USB_D-2"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -14280,22 +14300,23 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <attribute name="VALUE" x="13.97" y="127" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C8" gate="G$1" x="114.3" y="45.72"/>
-<instance part="R17" gate="G$1" x="2.54" y="88.9" smashed="yes">
-<attribute name="NAME" x="0.635" y="87.0839" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="7.9375" y="87.122" size="1.778" layer="96" rot="R180"/>
+<instance part="R17" gate="G$1" x="-10.16" y="88.9" smashed="yes">
+<attribute name="NAME" x="-12.065" y="87.0839" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-4.7625" y="87.122" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R18" gate="G$1" x="2.54" y="91.44" smashed="yes">
-<attribute name="NAME" x="0.635" y="94.7039" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="7.9375" y="94.742" size="1.778" layer="96" rot="R180"/>
+<instance part="R18" gate="G$1" x="-10.16" y="91.44" smashed="yes">
+<attribute name="NAME" x="-12.065" y="94.7039" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-4.7625" y="94.742" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="VUSB+2" gate="G$1" x="40.64" y="99.06" smashed="yes">
 <attribute name="VALUE" x="43.18" y="104.14" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C17" gate="G$1" x="10.16" y="83.82"/>
-<instance part="C18" gate="G$1" x="17.78" y="83.82"/>
+<instance part="C17" gate="G$1" x="-2.54" y="83.82"/>
+<instance part="C18" gate="G$1" x="5.08" y="83.82"/>
 <instance part="U$4" gate="G$1" x="-38.1" y="68.58"/>
 <instance part="GND20" gate="1" x="-53.34" y="58.42"/>
 <instance part="R8" gate="G$1" x="256.54" y="40.64"/>
+<instance part="C32" gate="G$1" x="17.78" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -14378,18 +14399,22 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="27.94" y1="76.2" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="78.74" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="78.74" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
 <junction x="27.94" y="76.2"/>
 <pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="78.74" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
-<junction x="17.78" y="76.2"/>
+<wire x1="17.78" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="78.74" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="76.2" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
+<junction x="5.08" y="76.2"/>
 <pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="-58.42" y1="83.82" x2="-5.08" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="83.82" x2="-5.08" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
-<junction x="10.16" y="76.2"/>
+<wire x1="-58.42" y1="83.82" x2="-15.24" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="83.82" x2="-15.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="76.2" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-2.54" y="76.2"/>
+<pinref part="C32" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="78.74" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
+<junction x="17.78" y="76.2"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
@@ -14526,6 +14551,9 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <wire x1="-25.4" y1="68.58" x2="-20.32" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="68.58" x2="-20.32" y2="93.98" width="0.1524" layer="91"/>
 <junction x="-20.32" y="93.98"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="86.36" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="93.98" x2="-20.32" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="USB"/>
@@ -14674,49 +14702,49 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <label x="233.68" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USB_D-" class="0">
-<segment>
-<label x="10.16" y="91.44" size="1.778" layer="95"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="91.44" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="91.44" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="86.36" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
-<junction x="17.78" y="91.44"/>
-</segment>
-</net>
-<net name="USB_D+" class="0">
-<segment>
-<label x="10.16" y="88.9" size="1.778" layer="95"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="88.9" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="86.36" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
-<junction x="10.16" y="88.9"/>
-</segment>
-</net>
-<net name="D-" class="0">
+<net name="D_N" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="U$4" gate="G$1" pin="P$6"/>
-<wire x1="-25.4" y1="91.44" x2="-2.54" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="91.44" x2="-15.24" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="73.66" x2="-25.4" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="-58.42" y1="91.44" x2="-25.4" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-25.4" y="91.44"/>
 </segment>
 </net>
-<net name="D+" class="0">
+<net name="D_P" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="88.9" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="88.9" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 <wire x1="-50.8" y1="73.66" x2="-53.34" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="73.66" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="-58.42" y1="88.9" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-53.34" y="88.9"/>
+</segment>
+</net>
+<net name="USB_D_N" class="0">
+<segment>
+<label x="-2.54" y="91.44" size="1.778" layer="95"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="91.44" x2="5.08" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="86.36" x2="5.08" y2="91.44" width="0.1524" layer="91"/>
+<junction x="5.08" y="91.44"/>
+</segment>
+</net>
+<net name="USB_D_P" class="0">
+<segment>
+<label x="-2.54" y="88.9" size="1.778" layer="95"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="88.9" x2="-2.54" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="88.9" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="86.36" x2="-2.54" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-2.54" y="88.9"/>
 </segment>
 </net>
 </nets>

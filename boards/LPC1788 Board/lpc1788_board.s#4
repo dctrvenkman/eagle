@@ -1876,7 +1876,7 @@ at 30/07/2012 10:08:22</description>
 <smd name="P$38" x="-8.75" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$39" x="-9.25" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$40" x="-9.75" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<polygon width="0.127" layer="1">
+<polygon width="0.254" layer="1">
 <vertex x="-13.05" y="-2.3"/>
 <vertex x="-12.25" y="-2.3"/>
 <vertex x="-12.25" y="-1.5"/>
@@ -1884,7 +1884,7 @@ at 30/07/2012 10:08:22</description>
 <vertex x="-10.65" y="-3.9"/>
 <vertex x="-13.05" y="-3.9"/>
 </polygon>
-<polygon width="0.127" layer="1">
+<polygon width="0.254" layer="1">
 <vertex x="10.65" y="-1.5"/>
 <vertex x="12.25" y="-1.5"/>
 <vertex x="12.25" y="-2.3"/>
@@ -1900,7 +1900,7 @@ at 30/07/2012 10:08:22</description>
 <wire x1="-12.75" y1="-5.3" x2="-12.75" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.75" y1="-4.5" x2="-12.15" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.15" y1="-4.5" x2="-12.15" y2="-0.3" width="0.127" layer="21"/>
-<polygon width="0.127" layer="29">
+<polygon width="0.254" layer="29">
 <vertex x="-13.175" y="-2.175"/>
 <vertex x="-12.375" y="-2.175"/>
 <vertex x="-12.375" y="-1.375"/>
@@ -1908,7 +1908,7 @@ at 30/07/2012 10:08:22</description>
 <vertex x="-10.525" y="-4.025"/>
 <vertex x="-13.175" y="-4.025"/>
 </polygon>
-<polygon width="0.127" layer="29">
+<polygon width="0.254" layer="29">
 <vertex x="10.525" y="-1.375"/>
 <vertex x="12.375" y="-1.375"/>
 <vertex x="12.375" y="-2.175"/>
@@ -2994,7 +2994,7 @@ Taken from: &lt;a href&gt;http://www.abracon.com/Resonators/abm2.pdf&lt;/a&gt;</
 <device name="" package="SMA-J-P-X-ST-EM1">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="GND@1" pad="G@1"/>
+<connect gate="G$1" pin="GND@1" pad="G@1 G@2 G@3 G@4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12532,6 +12532,8 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="Filled Plane" width="0" drill="0">
+</class>
+<class number="2" name="Differential Pairs" width="0" drill="0">
 </class>
 </classes>
 <parts>
