@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
@@ -30,36 +30,36 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="3" fill="9" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="3" fill="9" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="11" fill="1" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="13" fill="1" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="5" fill="1" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -1194,7 +1194,7 @@
 <smd name="P$38" x="-8.75" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$39" x="-9.25" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$40" x="-9.75" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<polygon width="0.127" layer="1">
+<polygon width="0.254" layer="1">
 <vertex x="-13.05" y="-2.3"/>
 <vertex x="-12.25" y="-2.3"/>
 <vertex x="-12.25" y="-1.5"/>
@@ -1202,7 +1202,7 @@
 <vertex x="-10.65" y="-3.9"/>
 <vertex x="-13.05" y="-3.9"/>
 </polygon>
-<polygon width="0.127" layer="1">
+<polygon width="0.254" layer="1">
 <vertex x="10.65" y="-1.5"/>
 <vertex x="12.25" y="-1.5"/>
 <vertex x="12.25" y="-2.3"/>
@@ -1218,6 +1218,23 @@
 <wire x1="-12.75" y1="-5.3" x2="-12.75" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.75" y1="-4.5" x2="-12.15" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.15" y1="-4.5" x2="-12.15" y2="-0.3" width="0.127" layer="21"/>
+<polygon width="0.254" layer="29">
+<vertex x="-13.175" y="-2.175"/>
+<vertex x="-12.375" y="-2.175"/>
+<vertex x="-12.375" y="-1.375"/>
+<vertex x="-10.525" y="-1.375"/>
+<vertex x="-10.525" y="-4.025"/>
+<vertex x="-13.175" y="-4.025"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="10.525" y="-1.375"/>
+<vertex x="12.375" y="-1.375"/>
+<vertex x="12.375" y="-2.175"/>
+<vertex x="13.175" y="-2.175"/>
+<vertex x="13.175" y="-4.025"/>
+<vertex x="10.525" y="-4.025"/>
+</polygon>
+<text x="-12" y="-7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="SO3_016">
 <smd name="P$1" x="-4.445" y="-4.65" dx="0.6" dy="2.05" layer="1"/>
@@ -1419,6 +1436,22 @@
 <wire x1="7.874" y1="-3.81" x2="9.906" y2="-3.81" width="0.1524" layer="21"/>
 <wire x1="10.16" y1="1.016" x2="9.906" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="9.906" y1="1.27" x2="7.874" y2="1.27" width="0.1524" layer="21"/>
+</package>
+<package name="OS102011MA1QS1">
+<pad name="P$2" x="0" y="0" drill="0.8"/>
+<pad name="P$3" x="2" y="0" drill="0.8"/>
+<pad name="P$1" x="-2" y="0" drill="0.8"/>
+<pad name="CASE@2" x="4.1" y="0" drill="1.5"/>
+<pad name="CASE@1" x="-4.1" y="0" drill="1.5"/>
+<wire x1="-4.3" y1="-2.2" x2="0" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.2" x2="2" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2.2" x2="4.3" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-2.2" x2="4.3" y2="2.2" width="0.127" layer="21"/>
+<wire x1="4.3" y1="2.2" x2="-4.3" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="2.2" x2="-4.3" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.2" x2="0" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="0" y1="-6.2" x2="2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="2" y1="-6.2" x2="2" y2="-2.2" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2898,7 +2931,7 @@ Datasheet: &lt;a href&gt;http://www.ti.com/lit/ds/symlink/ua78m33.pdf&lt;/a&gt;<
 <device name="" package="SMA-J-P-X-ST-EM1">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="GND@1" pad="G@1"/>
+<connect gate="G$1" pin="GND@1" pad="G@1 G@2 G@3 G@4"/>
 </connects>
 <technologies>
 <technology name=""/>

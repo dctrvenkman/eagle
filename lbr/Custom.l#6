@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -418,10 +418,10 @@
 <wire x1="-2.5" y1="-1" x2="2.5" y2="-1" width="0.2032" layer="21"/>
 <wire x1="2.5" y1="-1" x2="2.5" y2="10" width="0.2032" layer="21"/>
 <wire x1="2.5" y1="10" x2="-2.5" y2="10" width="0.2032" layer="21"/>
-<pad name="1" x="1.875" y="0" drill="0.75" diameter="1" rot="R90"/>
-<pad name="2" x="0.625" y="0" drill="0.75" diameter="1" rot="R90"/>
-<pad name="3" x="-0.625" y="0" drill="0.75" diameter="1" rot="R90"/>
-<pad name="4" x="-1.875" y="0" drill="0.75" diameter="1" rot="R90"/>
+<pad name="1" x="1.875" y="0" drill="0.6" diameter="1" rot="R90"/>
+<pad name="2" x="0.625" y="0" drill="0.6" diameter="1" rot="R90"/>
+<pad name="3" x="-0.625" y="0" drill="0.6" diameter="1" rot="R90"/>
+<pad name="4" x="-1.875" y="0" drill="0.6" diameter="1" rot="R90"/>
 <text x="-3" y="1.25" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="4.375" y="1.125" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <wire x1="-2.5" y1="10" x2="-2.5" y2="-1" width="0.2032" layer="21"/>
@@ -1194,7 +1194,7 @@
 <smd name="P$38" x="-8.75" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$39" x="-9.25" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$40" x="-9.75" y="0" dx="1.2" dy="0.3" layer="1" rot="R90"/>
-<polygon width="0.127" layer="1">
+<polygon width="0.254" layer="1">
 <vertex x="-13.05" y="-2.3"/>
 <vertex x="-12.25" y="-2.3"/>
 <vertex x="-12.25" y="-1.5"/>
@@ -1202,7 +1202,7 @@
 <vertex x="-10.65" y="-3.9"/>
 <vertex x="-13.05" y="-3.9"/>
 </polygon>
-<polygon width="0.127" layer="1">
+<polygon width="0.254" layer="1">
 <vertex x="10.65" y="-1.5"/>
 <vertex x="12.25" y="-1.5"/>
 <vertex x="12.25" y="-2.3"/>
@@ -1218,6 +1218,23 @@
 <wire x1="-12.75" y1="-5.3" x2="-12.75" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.75" y1="-4.5" x2="-12.15" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-12.15" y1="-4.5" x2="-12.15" y2="-0.3" width="0.127" layer="21"/>
+<polygon width="0.254" layer="29">
+<vertex x="-13.175" y="-2.175"/>
+<vertex x="-12.375" y="-2.175"/>
+<vertex x="-12.375" y="-1.375"/>
+<vertex x="-10.525" y="-1.375"/>
+<vertex x="-10.525" y="-4.025"/>
+<vertex x="-13.175" y="-4.025"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="10.525" y="-1.375"/>
+<vertex x="12.375" y="-1.375"/>
+<vertex x="12.375" y="-2.175"/>
+<vertex x="13.175" y="-2.175"/>
+<vertex x="13.175" y="-4.025"/>
+<vertex x="10.525" y="-4.025"/>
+</polygon>
+<text x="-12" y="-7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="SO3_016">
 <smd name="P$1" x="-4.445" y="-4.65" dx="0.6" dy="2.05" layer="1"/>
@@ -3163,6 +3180,41 @@ Supports both DF12B(5.0)-50DP-0.5V and DF12B-50DS-0.5V</description>
 <connect gate="G$1" pin="S3" pad="P$3"/>
 <connect gate="G$1" pin="S4" pad="P$4"/>
 <connect gate="G$1" pin="S5" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="20PIN_10X2_.100IN" prefix="J">
+<description>20 Pin 10x2 .1 in header</description>
+<gates>
+<gate name="G$1" symbol="10X2-PIN_HEADER" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="20-PIN_10X2_.100IN">
+<connects>
+<connect gate="G$1" pin="S1" pad="1"/>
+<connect gate="G$1" pin="S10" pad="10"/>
+<connect gate="G$1" pin="S11" pad="11"/>
+<connect gate="G$1" pin="S12" pad="12"/>
+<connect gate="G$1" pin="S13" pad="13"/>
+<connect gate="G$1" pin="S14" pad="14"/>
+<connect gate="G$1" pin="S15" pad="15"/>
+<connect gate="G$1" pin="S16" pad="16"/>
+<connect gate="G$1" pin="S17" pad="17"/>
+<connect gate="G$1" pin="S18" pad="18"/>
+<connect gate="G$1" pin="S19" pad="19"/>
+<connect gate="G$1" pin="S2" pad="2"/>
+<connect gate="G$1" pin="S20" pad="20"/>
+<connect gate="G$1" pin="S3" pad="3"/>
+<connect gate="G$1" pin="S4" pad="4"/>
+<connect gate="G$1" pin="S5" pad="5"/>
+<connect gate="G$1" pin="S6" pad="6"/>
+<connect gate="G$1" pin="S7" pad="7"/>
+<connect gate="G$1" pin="S8" pad="8"/>
+<connect gate="G$1" pin="S9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
