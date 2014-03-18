@@ -1999,65 +1999,67 @@ at 30/07/2012 10:08:22</description>
 <text x="-3" y="-5" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="TSOP54-II">
-<smd name="P$1" x="-10.4" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$2" x="-9.6" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$3" x="-8.8" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$4" x="-8" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$5" x="-7.2" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$6" x="-6.4" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$7" x="-5.6" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$8" x="-4.8" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$9" x="-4" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$10" x="-3.2" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$11" x="-2.4" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$12" x="-1.6" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$13" x="-0.8" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$14" x="0" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$15" x="0.8" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$16" x="1.6" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$17" x="2.4" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$18" x="3.2" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$19" x="4" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$20" x="4.8" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$21" x="5.6" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$22" x="6.4" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$23" x="7.2" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$24" x="8" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$25" x="8.8" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$26" x="9.6" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$27" x="10.4" y="-5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$28" x="10.4" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$29" x="9.6" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$30" x="8.8" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$31" x="8" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$32" x="7.2" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$33" x="6.4" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$34" x="5.6" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$35" x="4.8" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$36" x="4" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$37" x="3.2" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$38" x="2.4" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$39" x="1.6" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$40" x="0.8" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$41" x="0" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$42" x="-0.8" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$43" x="-1.6" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$44" x="-2.4" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$45" x="-3.2" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$46" x="-4" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$47" x="-4.8" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$48" x="-5.6" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$49" x="-6.4" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$50" x="-7.2" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$51" x="-8" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$52" x="-8.8" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$53" x="-9.6" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<smd name="P$54" x="-10.4" y="5.835" dx="0.458" dy="1.51" layer="1"/>
-<wire x1="-11.11" y1="5.08" x2="11.11" y2="5.08" width="0.25" layer="21"/>
-<wire x1="11.11" y1="5.08" x2="11.11" y2="-5.08" width="0.25" layer="21"/>
-<wire x1="11.11" y1="-5.08" x2="-11.11" y2="-5.08" width="0.25" layer="21"/>
-<wire x1="-11.11" y1="-5.08" x2="-11.11" y2="5.08" width="0.25" layer="21"/>
-<circle x="-10.2" y="-4.2" radius="0.2" width="0.5" layer="21"/>
+<smd name="P$1" x="-5.835" y="10.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$2" x="-5.835" y="9.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$3" x="-5.835" y="8.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$4" x="-5.835" y="8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$5" x="-5.835" y="7.2" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$6" x="-5.835" y="6.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$7" x="-5.835" y="5.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$8" x="-5.835" y="4.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$9" x="-5.835" y="4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$10" x="-5.835" y="3.2" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$11" x="-5.835" y="2.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$12" x="-5.835" y="1.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$13" x="-5.835" y="0.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$14" x="-5.835" y="0" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$15" x="-5.835" y="-0.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$16" x="-5.835" y="-1.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$17" x="-5.835" y="-2.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$18" x="-5.835" y="-3.2" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$19" x="-5.835" y="-4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$20" x="-5.835" y="-4.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$21" x="-5.835" y="-5.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$22" x="-5.835" y="-6.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$23" x="-5.835" y="-7.2" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$24" x="-5.835" y="-8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$25" x="-5.835" y="-8.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$26" x="-5.835" y="-9.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$27" x="-5.835" y="-10.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$28" x="5.835" y="-10.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$29" x="5.835" y="-9.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$30" x="5.835" y="-8.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$31" x="5.835" y="-8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$32" x="5.835" y="-7.2" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$33" x="5.835" y="-6.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$34" x="5.835" y="-5.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$35" x="5.835" y="-4.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$36" x="5.835" y="-4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$37" x="5.835" y="-3.2" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$38" x="5.835" y="-2.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$39" x="5.835" y="-1.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$40" x="5.835" y="-0.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$41" x="5.835" y="0" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$42" x="5.835" y="0.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$43" x="5.835" y="1.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$44" x="5.835" y="2.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$45" x="5.835" y="3.2" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$46" x="5.835" y="4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$47" x="5.835" y="4.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$48" x="5.835" y="5.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$49" x="5.835" y="6.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$50" x="5.835" y="7.2" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$51" x="5.835" y="8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$52" x="5.835" y="8.8" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$53" x="5.835" y="9.6" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<smd name="P$54" x="5.835" y="10.4" dx="0.458" dy="1.51" layer="1" rot="R270"/>
+<wire x1="5.08" y1="11.11" x2="5.08" y2="-11.11" width="0.25" layer="21"/>
+<wire x1="5.08" y1="-11.11" x2="-5.08" y2="-11.11" width="0.25" layer="21"/>
+<wire x1="-5.08" y1="-11.11" x2="-5.08" y2="11.11" width="0.25" layer="21"/>
+<wire x1="-5.08" y1="11.11" x2="5.08" y2="11.11" width="0.25" layer="21"/>
+<circle x="-4.2" y="10.2" radius="0.2" width="0.5" layer="21"/>
+<text x="-3.81" y="11.43" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-12.7" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -13815,7 +13817,7 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <net name="!WE" class="0">
 <segment>
 <pinref part="U7" gate="PORT4" pin="P4[25]/!EMC_WE!"/>
-<wire x1="317.5" y1="-86.36" x2="327.66" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="-86.36" x2="325.12" y2="-86.36" width="0.1524" layer="91"/>
 <label x="320.04" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14049,13 +14051,6 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <label x="157.48" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="U7" gate="PORT5" pin="P5[4]/U0_OE/T3_MAT3/U4_TXD"/>
-<wire x1="71.12" y1="-147.32" x2="116.84" y2="-147.32" width="0.1524" layer="91"/>
-<pinref part="J11" gate="G$1" pin="S13"/>
-</segment>
-</net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="U7" gate="PORT5" pin="P5[1]/EMC_A[25]/T2_MAT3"/>
@@ -14243,6 +14238,30 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="VUSB+3" gate="G$1" pin="+VUSB"/>
 <wire x1="340.36" y1="15.24" x2="340.36" y2="12.7" width="0.1524" layer="91"/>
 <junction x="340.36" y="12.7"/>
+</segment>
+</net>
+<net name="GPIO1" class="0">
+<segment>
+<pinref part="U7" gate="PORT3" pin="P3[31]/EMC_D[31]/T1_MAT2"/>
+<wire x1="195.58" y1="-101.6" x2="210.82" y2="-101.6" width="0.1524" layer="91"/>
+<label x="200.66" y="-101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J11" gate="G$1" pin="S15"/>
+<wire x1="116.84" y1="-149.86" x2="106.68" y2="-149.86" width="0.1524" layer="91"/>
+<label x="109.22" y="-149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO2" class="0">
+<segment>
+<pinref part="U7" gate="PORT0" pin="P0[23]/ADC0_IN[0]/I2S_RX_SCK/T3_CAP0"/>
+<wire x1="154.94" y1="25.4" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
+<label x="157.48" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J11" gate="G$1" pin="S13"/>
+<wire x1="116.84" y1="-147.32" x2="106.68" y2="-147.32" width="0.1524" layer="91"/>
+<label x="109.22" y="-147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -14829,7 +14848,6 @@ R9=Normally Off</text>
 <sheet>
 <description>LCD</description>
 <plain>
-<text x="106.68" y="58.42" size="5.08" layer="97">Add touch control lines to header</text>
 </plain>
 <instances>
 <instance part="J8" gate="G$1" x="0" y="5.08" smashed="yes">
@@ -16029,9 +16047,23 @@ R9=Normally Off</text>
 </sheets>
 <errors>
 <approved hash="104,2,35.56,58.42,U1,VIN,+VBAT,,,"/>
+<approved hash="104,2,185.42,71.12,U3,VIN,+VBAT,,,"/>
+<approved hash="104,2,-12.7,116.84,J2,1,N$43,,,"/>
+<approved hash="104,2,-12.7,106.68,J2,5,GND,,,"/>
+<approved hash="104,2,88.9,119.38,U2,USB,+VUSB,,,"/>
+<approved hash="104,2,88.9,116.84,U2,BAT,+VBAT,,,"/>
 <approved hash="104,3,-43.18,30.48,J8,VDD,+3V3,,,"/>
 <approved hash="104,3,-43.18,-5.08,J8,LED-,GND,,,"/>
 <approved hash="104,3,-43.18,27.94,J8,LED+,LED1_PWR,,,"/>
+<approved hash="104,4,-58.42,40.64,U5,VCC,+3V3,,,"/>
+<approved hash="104,2,-5.08,91.44,U8,P$2,GND,,,"/>
+<approved hash="104,2,20.32,91.44,U8,P$5,+VUSB,,,"/>
+<approved hash="202,3,78.74,-25.4,U6,SY-,,,,"/>
+<approved hash="104,3,99.06,-17.78,U6,VDD,+3V3,,,"/>
+<approved hash="104,4,99.06,68.58,U4,VDD,+3V3,,,"/>
+<approved hash="104,4,104.14,68.58,U4,VDDQ,+3V3,,,"/>
+<approved hash="104,4,99.06,2.54,U4,VSS,GND,,,"/>
+<approved hash="104,4,104.14,2.54,U4,VSSQ,GND,,,"/>
 </errors>
 </schematic>
 </drawing>

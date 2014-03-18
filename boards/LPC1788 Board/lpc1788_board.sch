@@ -12297,18 +12297,8 @@ Source: www.kingbright.com</description>
 <smd name="DAT2" x="2.84" y="6.63" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
 <text x="-3.845" y="-1.92" size="1.27" layer="21">Micro SD</text>
 <rectangle x1="3.89" y1="5.98" x2="4.89" y2="7.18" layer="1"/>
-<rectangle x1="-7.16" y1="-1.92" x2="-6.41" y2="1.68" layer="39"/>
-<rectangle x1="-6.06" y1="-7.32" x2="-5.36" y2="0.28" layer="39" rot="R180"/>
-<rectangle x1="-5.36" y1="-0.02" x2="2.99" y2="1.58" layer="39"/>
-<rectangle x1="-7.16" y1="2.88" x2="-6.41" y2="6.13" layer="39"/>
-<rectangle x1="2.84" y1="-9.37" x2="5.54" y2="-8.07" layer="39"/>
 <rectangle x1="-6.2" y1="5.9" x2="-5.4" y2="7.25" layer="29"/>
-<rectangle x1="-7.25" y1="2.8" x2="-6.3" y2="6.25" layer="29"/>
-<rectangle x1="-7.25" y1="-2" x2="-6.3" y2="1.75" layer="29"/>
-<rectangle x1="-5.45" y1="-0.15" x2="3.1" y2="1.7" layer="29"/>
-<rectangle x1="-6.15" y1="-7.4" x2="-5.25" y2="0.35" layer="29"/>
 <rectangle x1="3.8" y1="5.85" x2="5" y2="7.3" layer="29"/>
-<rectangle x1="2.75" y1="-9.55" x2="5.65" y2="-7.95" layer="29"/>
 <rectangle x1="3.89" y1="5.98" x2="4.89" y2="7.18" layer="31"/>
 <smd name="DET_B" x="-5.81" y="6.58" dx="0.7" dy="1.2" layer="1"/>
 <smd name="CASE" x="-6.785" y="2.28" dx="1" dy="1.2" layer="1"/>
@@ -12728,7 +12718,6 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <wire x1="157.48" y1="-111.76" x2="93.98" y2="-111.76" width="0.1524" layer="97"/>
 <text x="109.22" y="-172.72" size="2.54" layer="97">Expansion Interface</text>
 <text x="330.2" y="22.86" size="1.778" layer="97">NOTE: USB_VUSB connection may not be needed</text>
-<text x="48.26" y="-182.88" size="5.08" layer="97">Change out these GPIO for easier to route ones</text>
 </plain>
 <instances>
 <instance part="U7" gate="MAIN" x="20.32" y="50.8"/>
@@ -13818,7 +13807,7 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <net name="!WE" class="0">
 <segment>
 <pinref part="U7" gate="PORT4" pin="P4[25]/!EMC_WE!"/>
-<wire x1="317.5" y1="-86.36" x2="327.66" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="-86.36" x2="325.12" y2="-86.36" width="0.1524" layer="91"/>
 <label x="320.04" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14052,13 +14041,6 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <label x="157.48" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="U7" gate="PORT5" pin="P5[4]/U0_OE/T3_MAT3/U4_TXD"/>
-<wire x1="71.12" y1="-147.32" x2="116.84" y2="-147.32" width="0.1524" layer="91"/>
-<pinref part="J11" gate="G$1" pin="S13"/>
-</segment>
-</net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="U7" gate="PORT5" pin="P5[1]/EMC_A[25]/T2_MAT3"/>
@@ -14246,6 +14228,30 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <pinref part="VUSB+3" gate="G$1" pin="+VUSB"/>
 <wire x1="340.36" y1="15.24" x2="340.36" y2="12.7" width="0.1524" layer="91"/>
 <junction x="340.36" y="12.7"/>
+</segment>
+</net>
+<net name="GPIO1" class="0">
+<segment>
+<pinref part="U7" gate="PORT3" pin="P3[31]/EMC_D[31]/T1_MAT2"/>
+<wire x1="195.58" y1="-101.6" x2="210.82" y2="-101.6" width="0.1524" layer="91"/>
+<label x="200.66" y="-101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J11" gate="G$1" pin="S15"/>
+<wire x1="116.84" y1="-149.86" x2="106.68" y2="-149.86" width="0.1524" layer="91"/>
+<label x="109.22" y="-149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO2" class="0">
+<segment>
+<pinref part="U7" gate="PORT0" pin="P0[23]/ADC0_IN[0]/I2S_RX_SCK/T3_CAP0"/>
+<wire x1="154.94" y1="25.4" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
+<label x="157.48" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J11" gate="G$1" pin="S13"/>
+<wire x1="116.84" y1="-147.32" x2="106.68" y2="-147.32" width="0.1524" layer="91"/>
+<label x="109.22" y="-147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -14832,7 +14838,6 @@ R9=Normally Off</text>
 <sheet>
 <description>LCD</description>
 <plain>
-<text x="106.68" y="58.42" size="5.08" layer="97">Add touch control lines to header</text>
 </plain>
 <instances>
 <instance part="J8" gate="G$1" x="0" y="5.08" smashed="yes">
@@ -16032,9 +16037,23 @@ R9=Normally Off</text>
 </sheets>
 <errors>
 <approved hash="104,2,35.56,58.42,U1,VIN,+VBAT,,,"/>
+<approved hash="104,2,185.42,71.12,U3,VIN,+VBAT,,,"/>
+<approved hash="104,2,-12.7,116.84,J2,1,N$43,,,"/>
+<approved hash="104,2,-12.7,106.68,J2,5,GND,,,"/>
+<approved hash="104,2,88.9,119.38,U2,USB,+VUSB,,,"/>
+<approved hash="104,2,88.9,116.84,U2,BAT,+VBAT,,,"/>
 <approved hash="104,3,-43.18,30.48,J8,VDD,+3V3,,,"/>
 <approved hash="104,3,-43.18,-5.08,J8,LED-,GND,,,"/>
 <approved hash="104,3,-43.18,27.94,J8,LED+,LED1_PWR,,,"/>
+<approved hash="104,4,-58.42,40.64,U5,VCC,+3V3,,,"/>
+<approved hash="104,2,-5.08,91.44,U8,P$2,GND,,,"/>
+<approved hash="104,2,20.32,91.44,U8,P$5,+VUSB,,,"/>
+<approved hash="202,3,78.74,-25.4,U6,SY-,,,,"/>
+<approved hash="104,3,99.06,-17.78,U6,VDD,+3V3,,,"/>
+<approved hash="104,4,99.06,68.58,U4,VDD,+3V3,,,"/>
+<approved hash="104,4,104.14,68.58,U4,VDDQ,+3V3,,,"/>
+<approved hash="104,4,99.06,2.54,U4,VSS,GND,,,"/>
+<approved hash="104,4,104.14,2.54,U4,VSSQ,GND,,,"/>
 </errors>
 </schematic>
 </drawing>
