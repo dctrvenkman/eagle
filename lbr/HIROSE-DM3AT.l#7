@@ -103,33 +103,33 @@
 <wire x1="22.86" y1="-10.16" x2="22.86" y2="10.16" width="0.254" layer="94"/>
 <wire x1="22.86" y1="10.16" x2="-22.86" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="-5.08" size="1.27" layer="94">HIROSE DM3AT</text>
-<pin name="DNC2" x="-17.78" y="12.7" length="middle" rot="R270"/>
-<pin name="MISO" x="-12.7" y="12.7" length="middle" rot="R270"/>
-<pin name="GND" x="-7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="DAT1" x="-17.78" y="12.7" length="middle" rot="R270"/>
+<pin name="DAT0" x="-12.7" y="12.7" length="middle" rot="R270"/>
+<pin name="VSS" x="-7.62" y="12.7" length="middle" rot="R270"/>
 <pin name="CLK" x="-2.54" y="12.7" length="middle" rot="R270"/>
-<pin name="VCC" x="2.54" y="12.7" length="middle" rot="R270"/>
-<pin name="MOSI" x="7.62" y="12.7" length="middle" rot="R270"/>
-<pin name="CS" x="12.7" y="12.7" length="middle" rot="R270"/>
-<pin name="DNC1" x="17.78" y="12.7" length="middle" rot="R270"/>
+<pin name="VDD" x="2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="CMD" x="7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="CD/DAT3" x="12.7" y="12.7" length="middle" rot="R270"/>
+<pin name="DAT2" x="17.78" y="12.7" length="middle" rot="R270"/>
 <text x="-22.86" y="-12.7" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DM3AT">
+<deviceset name="DM3AT" prefix="U">
 <gates>
 <gate name="G$1" symbol="DM3AT" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DM3AT">
 <connects>
+<connect gate="G$1" pin="CD/DAT3" pad="CS"/>
 <connect gate="G$1" pin="CLK" pad="CLK"/>
-<connect gate="G$1" pin="CS" pad="CS"/>
-<connect gate="G$1" pin="DNC1" pad="DNC1"/>
-<connect gate="G$1" pin="DNC2" pad="DNC2"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="CMD" pad="MOSI"/>
+<connect gate="G$1" pin="DAT0" pad="MISO"/>
+<connect gate="G$1" pin="DAT1" pad="DNC2"/>
+<connect gate="G$1" pin="DAT2" pad="DNC1"/>
+<connect gate="G$1" pin="VDD" pad="VCC"/>
+<connect gate="G$1" pin="VSS" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>

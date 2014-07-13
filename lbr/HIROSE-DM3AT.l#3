@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -71,8 +71,7 @@
 <smd name="CMD" x="0.64" y="6.63" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
 <smd name="CD/DAT3" x="1.74" y="6.63" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
 <smd name="DAT2" x="2.84" y="6.63" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<text x="-3.21" y="-1.92" size="1.27" layer="21">HIROSE</text>
-<text x="-3.26" y="-3.77" size="1.27" layer="21">DM3AT</text>
+<text x="-3.845" y="-1.92" size="1.27" layer="21">Micro SD</text>
 <rectangle x1="3.89" y1="5.98" x2="4.89" y2="7.18" layer="1"/>
 <rectangle x1="-7.16" y1="-1.92" x2="-6.41" y2="1.68" layer="39"/>
 <rectangle x1="-6.06" y1="-7.32" x2="-5.36" y2="0.28" layer="39" rot="R180"/>
@@ -128,6 +127,8 @@
 <connect gate="G$1" pin="DAT0" pad="DAT0"/>
 <connect gate="G$1" pin="DAT1" pad="DAT1"/>
 <connect gate="G$1" pin="DAT2" pad="DAT2"/>
+<connect gate="G$1" pin="DET_A" pad="DET_A"/>
+<connect gate="G$1" pin="DET_B" pad="DET_B"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 <connect gate="G$1" pin="VSS" pad="VSS"/>
 </connects>

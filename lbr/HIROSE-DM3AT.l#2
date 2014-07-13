@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -71,8 +71,7 @@
 <smd name="CMD" x="0.64" y="6.63" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
 <smd name="CD/DAT3" x="1.74" y="6.63" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
 <smd name="DAT2" x="2.84" y="6.63" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<text x="-3.21" y="-1.92" size="1.27" layer="21">HIROSE</text>
-<text x="-3.26" y="-3.77" size="1.27" layer="21">DM3AT</text>
+<text x="-3.845" y="-1.92" size="1.27" layer="21">Micro SD</text>
 <rectangle x1="3.89" y1="5.98" x2="4.89" y2="7.18" layer="1"/>
 <rectangle x1="-7.16" y1="-1.92" x2="-6.41" y2="1.68" layer="39"/>
 <rectangle x1="-6.06" y1="-7.32" x2="-5.36" y2="0.28" layer="39" rot="R180"/>
@@ -101,17 +100,17 @@
 <wire x1="33.02" y1="-10.16" x2="33.02" y2="10.16" width="0.254" layer="94"/>
 <wire x1="33.02" y1="10.16" x2="-22.86" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="-5.08" size="1.27" layer="94">HIROSE DM3AT</text>
-<pin name="DAT1" x="-17.78" y="12.7" length="middle" rot="R270"/>
-<pin name="DAT0" x="-12.7" y="12.7" length="middle" rot="R270"/>
-<pin name="VSS" x="-7.62" y="12.7" length="middle" rot="R270"/>
-<pin name="CLK" x="-2.54" y="12.7" length="middle" rot="R270"/>
-<pin name="VDD" x="2.54" y="12.7" length="middle" rot="R270"/>
-<pin name="CMD" x="7.62" y="12.7" length="middle" rot="R270"/>
-<pin name="CD/DAT3" x="12.7" y="12.7" length="middle" rot="R270"/>
-<pin name="DAT2" x="17.78" y="12.7" length="middle" rot="R270"/>
+<pin name="DAT1" x="-17.78" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="DAT0" x="-12.7" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="VSS" x="-7.62" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="CLK" x="-2.54" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="VDD" x="2.54" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="CMD" x="7.62" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="CD/DAT3" x="12.7" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="DAT2" x="17.78" y="12.7" visible="pin" length="middle" rot="R270"/>
 <text x="-22.86" y="-12.7" size="1.778" layer="95">&gt;NAME</text>
-<pin name="DET_A" x="30.48" y="12.7" length="middle" rot="R270"/>
-<pin name="DET_B" x="25.4" y="12.7" length="middle" rot="R270"/>
+<pin name="DET_A" x="30.48" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="DET_B" x="25.4" y="12.7" visible="pin" length="middle" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
