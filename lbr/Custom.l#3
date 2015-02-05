@@ -1638,6 +1638,8 @@
 <wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.127" layer="21"/>
 <circle x="-1.875" y="-1.125" radius="0.125" width="0.35" layer="21"/>
+<text x="-1.905" y="2.155" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.425" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOD-323">
 <wire x1="-0.8" y1="0.55" x2="0.8" y2="0.55" width="0.1016" layer="21"/>

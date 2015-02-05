@@ -3883,7 +3883,7 @@ Supports both DF12B(5.0)-50DP-0.5V and DF12B-50DS-0.5V</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="B0540WS-SCHOTTKY_DIODE" prefix="D">
+<deviceset name="B0540WS-SCHOTTKY_DIODE" prefix="D" uservalue="yes">
 <description>Schottky barrier rectifier</description>
 <gates>
 <gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>

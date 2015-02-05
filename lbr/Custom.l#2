@@ -1623,8 +1623,8 @@
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-<text x="-3.175" y="2.155" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.175" y="-3.425" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.905" y="2.155" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.425" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOT-26">
 <smd name="2" x="0" y="-1.2" dx="0.8" dy="0.55" layer="1" rot="R90"/>
